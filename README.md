@@ -31,10 +31,7 @@ Este projeto realiza uma **análise exploratória de dados (EDA)** da base públ
 ├── 📁 notebooks/          # Jupyter Notebooks com análises
 │   └── analise_exploratoria.ipynb
 │
-├── 📁 outputs/            # Gráficos, tabelas e relatórios gerados
-│   ├── top_empresas.png
-│   ├── distribuicao_classes.png
-│   └── heatmap_classes_empresas.png
+├── 📁 outputs/            # Gráficos, tabelas e relatórios que serão gerados
 │
 ├── README.md              # Este arquivo
 └── requirements.txt       # Dependências do projeto
