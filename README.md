@@ -26,10 +26,10 @@ Este projeto realiza uma **análise exploratória de dados (EDA)** da base públ
 📁 agrofit-analise/
 │
 ├── 📁 data/               # Dados brutos e processados
-│   └── produtos_formulados.csv
+│   └── agrofitprodutosformulados.csv
 │
 ├── 📁 notebooks/          # Jupyter Notebooks com análises
-│   └── analise_exploratoria.ipynb
+│   └── agrofit.ipynb
 │
 ├── 📁 outputs/            # Gráficos, tabelas e relatórios que serão gerados
 │
@@ -112,8 +112,8 @@ jupyter notebook notebooks/agrofit.ipynb
 ## 🚀 Próximos passos
 
 - [ ] Continuação das análises sobre toxicologia
-- [ ] Análise dos produtos biológicos
-- [ ] Insights sobre as culturas atendidas e formulações
+- [X] Análise dos produtos biológicos
+- [X] Insights sobre as culturas atendidas e formulações
 - [ ] Dashboard interativo com Plotly/Dash ou Streamlit
 
 
