@@ -60,12 +60,7 @@ cd Analise-Agrofit
 pip install -r requirements.txt
 ```
 
-### 3. Baixe a base de dados
-Acesse o site do [Agrofit (MAPA)](https://dados.agricultura.gov.br/pt_BR/dataset/sistema-de-agrotoxicos-fitossanitarios-agrofit/resource/d30b30d7-e256-484e-9ab8-cd40974e1238#) e baixe o arquivo CSV de **Produtos Formulados** mais recente.
-
-Coloque o arquivo na pasta `data/`.
-
-### 4. Execute o notebook
+### 3. Execute o notebook
 ```bash
 jupyter notebook notebooks/agrofit.ipynb
 ```
