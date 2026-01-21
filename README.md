@@ -26,10 +26,10 @@ Este projeto realiza uma **análise exploratória de dados (EDA)** da base públ
 📁 agrofit-analise/
 │
 ├── 📁 data/               # Dados brutos e processados
-│   └── produtos_formulados.csv
+│   └── agrofitprodutosformulados.csv
 │
 ├── 📁 notebooks/          # Jupyter Notebooks com análises
-│   └── analise_exploratoria.ipynb
+│   └── agrofit.ipynb
 │
 ├── 📁 outputs/            # Gráficos, tabelas e relatórios que serão gerados
 │
@@ -50,22 +50,20 @@ Este projeto realiza uma **análise exploratória de dados (EDA)** da base públ
 ## 📥 Como reproduzir este projeto
 
 ### 1. Clone o repositório
+
 ```bash
 git clone https://github.com/seu-usuario/Analise-Agrofit.git
 cd Analise-Agrofit
 ```
 
 ### 2. Instale as dependências
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Baixe a base de dados
-Acesse o site do [Agrofit (MAPA)](https://dados.agricultura.gov.br/pt_BR/dataset/sistema-de-agrotoxicos-fitossanitarios-agrofit/resource/d30b30d7-e256-484e-9ab8-cd40974e1238#) e baixe o arquivo CSV de **Produtos Formulados** mais recente.
+### 3. Execute o notebook
 
-Coloque o arquivo na pasta `data/`.
-
-### 4. Execute o notebook
 ```bash
 jupyter notebook notebooks/agrofit.ipynb
 ```
@@ -75,36 +73,45 @@ jupyter notebook notebooks/agrofit.ipynb
 ## 🔍 Principais insights encontrados
 
 ### 🏢 Concentração de mercado
-- As **top 10 empresas** concentram **37,2%** dos produtos registrados.
-- Empresas como **Syngenta, UPL, Adama, Nortox e Sumitomo** dominam o mercado.
+
+- As **top 10 empresas** concentram **~37% dos produtos registrados.**
+- **Empresas como **Syngenta, UPL, Adama, Nortox e Sumitomo** dominam o mercado.**
 
 ### 🌿 Distribuição por classe de uso
-- **33,7% dos produtos** são **herbicidas**, refletindo o modelo agrícola brasileiro extensivo.
-- **Inseticidas** representam ~19% (considerando combinações).
+
+- **~33% dos produtos** são **herbicidas**, refletindo o modelo agrícola brasileiro extensivo.
+- **Inseticidas** representam **~19%** (considerando combinações).
 - **~18% dos produtos** são **microbiológicos ou biológicos** — sinal positivo para alternativas sustentáveis.
 
 ### 🧪 Ingredientes ativos mais versáteis
+
 - **Azoxistrobina + Difenoconazol** aparece em **124 culturas diferentes** — o ingrediente ativo mais versátil.
 - **Difenoconazol isolado** atende **120 culturas**.
 
 ### ⚠️ Perfil toxicológico
-- **~78% dos produtos** são classificados como **Categoria IV (Pouco Tóxico)** ou **Categoria V (Improvável de Causar Dano)**.
-- Produtos biológicos geralmente caem nessas categorias mais seguras.
+
+- **~78% dos produtos** são classificados como **Categoria 4 (Pouco Tóxico)** ou **Categoria 5 (Improvável de Causar Dano)**.
+- Aproximadamente **100%** dos produtos biológicos caem nessas categorias mais seguras, ou não são classificados.
+- **~92% dos herbicidas** caem na classificação de **Categoria 4 e 5**.
+- Inseticidas têm o perfil mais perigoso de todos, com **~28%** nas **Categorias de 1 a 3**.
 
 ---
 
 ## 🧹 Desafios enfrentados e soluções adotadas
 
 ### 1. **Duplicação de registros por cultura/alvo**
-**Problema:** Cada produto aparece múltiplas vezes (uma por cultura autorizada).  
+
+**Problema:** Cada produto aparece múltiplas vezes (uma por cultura autorizada).
 **Solução:** Deduplicação por `NR_REGISTRO` antes de contar produtos únicos.
 
 ### 2. **Classes combinadas (ex: "Acaricida/Inseticida")**
-**Problema:** Dificulta contagem por classe individual.  
+
+**Problema:** Dificulta contagem por classe individual.
 **Solução:** Análise dupla — com e sem `.explode()` para diferentes perspectivas.
 
 ### 3. **Inconsistência na coluna de classe toxicológica**
-**Problema:** Mistura de sistema antigo (I-IV) e novo (Categorias 1-5), valores mal formatados.  
+
+**Problema:** Mistura de sistema antigo (I-IV) e novo (Categorias 1-5), valores mal formatados.
 **Solução:** Mapeamento manual e padronização com dicionário.
 
 ---
@@ -115,7 +122,6 @@ jupyter notebook notebooks/agrofit.ipynb
 - [ ] Análise dos produtos biológicos
 - [ ] Insights sobre as culturas atendidas e formulações
 - [ ] Dashboard interativo com Plotly/Dash ou Streamlit
-
 
 ---
 
@@ -128,9 +134,9 @@ jupyter notebook notebooks/agrofit.ipynb
 
 ## 👤 Autor
 
-**[Luan Vinícius]**  
-📧 [luanvinicius@pm.me](mailto:luanvinicius@pm.me)  
-💼 [LinkedIn](https://www.linkedin.com/in/luan-vinicius-silva-dias/)  
+**[Luan Vinícius]**
+📧 [luanvinicius@pm.me](mailto:luanvinicius@pm.me)
+💼 [LinkedIn](https://www.linkedin.com/in/luan-vinicius-silva-dias/)
 🐙 [GitHub](https://github.com/luan-vsd)
 
 ---

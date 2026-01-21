@@ -7540,8 +7540,6 @@ a.anchor-link {
 
 <span class="c1"># Salvar no caminho correto</span>
 <span class="n">csv_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_folder</span><span class="p">,</span> <span class="s2">"agrofitprodutosformulados.csv"</span><span class="p">)</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">csv_path</span><span class="p">,</span> <span class="s2">"wb"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7556,6 +7554,7 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
 
 <span class="c1"># Importando arquivo csv e convertendo tipos</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv_path</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">';'</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">'pyarrow'</span><span class="p">)</span>
@@ -7591,13 +7590,15 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bb4cce7f">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=86f1a857">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h6 id="Dados-analisados-dia-19/01/2026">Dados analisados dia 19/01/2026<a class="anchor-link" href="#Dados-analisados-dia-19/01/2026">¶</a></h6>
+<h4 id="Dados-obtidos-no-dia-21/02/2026">Dados obtidos no dia <strong>21/02/2026</strong><a class="anchor-link" href="#Dados-obtidos-no-dia-21/02/2026">¶</a></h4><blockquote>
+<p><strong>Nota</strong>: Onde houver um asterisco (*), os dados foram obtidos na data acima e podem estar desatualizados de acordo com a evolução do banco de dados.</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -7774,7 +7775,7 @@ a.anchor-link {
 <td>...</td>
 </tr>
 <tr>
-<th>272220</th>
+<th>272444</th>
 <td>37019</td>
 <td>ÍmparBR</td>
 <td>FS - Suspensão Concentrada p/ Trat. Sementes</td>
@@ -7793,7 +7794,7 @@ a.anchor-link {
 <td>Ouro</td>
 </tr>
 <tr>
-<th>272221</th>
+<th>272445</th>
 <td>37019</td>
 <td>ÍmparBR</td>
 <td>FS - Suspensão Concentrada p/ Trat. Sementes</td>
@@ -7812,7 +7813,7 @@ a.anchor-link {
 <td>Ouro</td>
 </tr>
 <tr>
-<th>272222</th>
+<th>272446</th>
 <td>37019</td>
 <td>ÍmparBR</td>
 <td>FS - Suspensão Concentrada p/ Trat. Sementes</td>
@@ -7831,7 +7832,7 @@ a.anchor-link {
 <td>Ouro</td>
 </tr>
 <tr>
-<th>272223</th>
+<th>272447</th>
 <td>7697</td>
 <td>Óleo Vegetal Nortox</td>
 <td>EC - Concentrado Emulsionável</td>
@@ -7850,7 +7851,7 @@ a.anchor-link {
 <td>Nortox</td>
 </tr>
 <tr>
-<th>272224</th>
+<th>272448</th>
 <td>7697</td>
 <td>Óleo Vegetal Nortox</td>
 <td>EC - Concentrado Emulsionável</td>
@@ -7870,7 +7871,7 @@ a.anchor-link {
 </tr>
 </tbody>
 </table>
-<p>272225 rows × 16 columns</p>
+<p>272449 rows × 16 columns</p>
 </div>
 </div>
 </div>
@@ -7894,7 +7895,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Vis%C3%A3o-geral-do-mercado-/-concentra%C3%A7%C3%A3o">Visão geral do mercado / concentração<a class="anchor-link" href="#Vis%C3%A3o-geral-do-mercado-/-concentra%C3%A7%C3%A3o">¶</a></h2>
+<h2 id="Vis%C3%A3o-geral-do-mercado/concentra%C3%A7%C3%A3o">Visão geral do mercado/concentração<a class="anchor-link" href="#Vis%C3%A3o-geral-do-mercado/concentra%C3%A7%C3%A3o">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7905,7 +7906,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Quantas-empresas-distintas-existem-no-sistema">Quantas empresas distintas existem no sistema<a class="anchor-link" href="#Quantas-empresas-distintas-existem-no-sistema">¶</a></h3>
+<h3 id="Quantas-empresas-distintas-existem-no-sistema?">Quantas empresas distintas existem no sistema?<a class="anchor-link" href="#Quantas-empresas-distintas-existem-no-sistema?">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7947,7 +7948,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<p>Como podemos ver, são <strong>307</strong> empresas com CNPJ distintos inscritos no banco de dados do Agrofit.</p>
+<p>Como podemos ver, são <strong>307</strong> * empresas com CNPJ distintos inscritos no banco de dados do Agrofit.</p>
 <p>Vale ressaltar que, algumas poucas empresas atuam sob diferentes inscrições.</p>
 <hr/>
 </div>
@@ -8011,7 +8012,7 @@ Name: count, dtype: int64</pre>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
 <p>Acima, podemos ver as empresas e a quantidade de produtos registrados por cada uma em ordem decrescente.</p>
-<p>Note que, dentre as empresas listada, <strong>apenas 1</strong> delas é genuinamente brasileira: a Nortox S.A., ocupando a quarta colocação com <em>167</em> produtos registrados.</p>
+<p>Note que, dentre as empresas listada, <strong>apenas 1</strong> delas é genuinamente brasileira: a Nortox S.A., ocupando a quarta colocação com 167* produtos registrados.</p>
 <hr/>
 </div>
 </div>
@@ -8116,7 +8117,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<p>Se formos contar a participação que as top 10 empresas têm sob o mercado nacional, elas juntas somam 37,11% do mercado, ou ainda, 1578 produtos dos 4252.</p>
+<p>Se formos contar a participação que as top 10 empresas têm sob o mercado nacional, elas juntas somam 37,11%* do mercado, ou ainda, 1578* produtos dos 4252*.</p>
 <hr/>
 </div>
 </div>
@@ -8150,7 +8151,7 @@ Name: count, dtype: int64</pre>
 <span class="n">classes_df</span><span class="p">[</span><span class="s1">'(MICRO)BIOLÓGICO'</span><span class="p">]</span> <span class="o">=</span> <span class="n">classes_df</span><span class="p">[</span><span class="s1">'CLASSE'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">'Biológico'</span><span class="p">,</span> <span class="n">case</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">na</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="c1"># Agrupa por empresa e soma a quantidade de produtos por classe</span>
-<span class="n">classes</span> <span class="o">=</span> <span class="n">classes_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'TITULAR'</span><span class="p">)[[</span><span class="s1">'HERBICIDA'</span><span class="p">,</span> <span class="s1">'FUNGICIDA'</span><span class="p">,</span> <span class="s1">'INSETICIDA'</span><span class="p">,</span> <span class="s1">'(MICRO)BIOLÓGICO'</span><span class="p">]]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">classes</span> <span class="o">=</span> <span class="n">classes_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'TITULAR'</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="kc">True</span><span class="p">)[[</span><span class="s1">'HERBICIDA'</span><span class="p">,</span> <span class="s1">'FUNGICIDA'</span><span class="p">,</span> <span class="s1">'INSETICIDA'</span><span class="p">,</span> <span class="s1">'(MICRO)BIOLÓGICO'</span><span class="p">]]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 
 <span class="c1"># Adiciona coluna de total para facilitar ordenação</span>
 <span class="n">classes</span><span class="p">[</span><span class="s1">'TOTAL'</span><span class="p">]</span> <span class="o">=</span> <span class="n">classes</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -8300,9 +8301,9 @@ Name: count, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<p>Como podemos ver acima, a participação dos grandes players no mercado de (micro)biológicos ainda é irrisória frente aos produtos químico.</p>
+<p>Como podemos ver acima, a participação dos grandes players no mercado de (micro)biológicos ainda é irrisória frente aos produtos químicos.</p>
 <p>Apesar disso, podemos ver a Syngenta ocupando o posto de primeira colocada em número de fungicidas e inseticidas registrados, tendo próximo do dobro de produtos quando comparado às demais empresas.</p>
-<p>Quando olhamos para os herbicidas, o mercado é mais competitivo, com 6 de 10 tendo mais 70 produtos registrados, com a chinesa Rainbow encabeçando a lista.</p>
+<p>Quando olhamos para os herbicidas, o mercado é mais competitivo, com 6* de 10 tendo mais 70* produtos registrados, com a chinesa Rainbow encabeçando a lista.</p>
 <hr/>
 </div>
 </div>
@@ -8315,6 +8316,18 @@ Name: count, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Ingredientes-ativos-mais-usados">Ingredientes ativos mais usados<a class="anchor-link" href="#Ingredientes-ativos-mais-usados">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bc5b7518">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Ingredientes ativos</strong> são as substâncias principais presentes nos agroquímicos responsáveis pela ação sobre organismos-alvo, como pragas, doenças e plantas daninhas. Eles são o componente essencial da formulação e determinam o modo de ação, eficácia e toxicidade do produto. Exemplos comuns incluem <strong>glifosato</strong> (herbicida), <strong>2,4-D</strong> (herbicida), <strong>clorotalonil</strong> (fungicida), <strong>fipronil</strong> (inseticida) e <strong>acefato</strong> (inseticida).</p>
+<p>Esses ingredientes são combinados com <strong>ingredientes inertes</strong> (como solventes ou dispersantes) para melhorar a aplicação, estabilidade e eficiência do produto. A legislação brasileira exige que o ingrediente ativo seja claramente identificado no rótulo, pois é ele que define o risco à saúde humana e ao meio ambiente.</p>
 </div>
 </div>
 </div>
@@ -8384,10 +8397,10 @@ Name: count, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<p>Analisando apenas os 10 ingredientes ativos mais utilizados, vemos um domínio do <strong>glifosato</strong>, com 80 produtos contendo alguma formulação do ativo, seguido pelo <strong>Glufosinato</strong>, com 51 produtos utilizando o ativo.</p>
-<p>Fipronil segue sendo o primeiro ativo inseticida mais utilizado, mas é seguido por um agente inesperado: <em><strong>Cotesia flavipes</strong></em>.<br/>
+<p>Analisando apenas os 10 ingredientes ativos mais utilizados, vemos um domínio do <strong>glifosato</strong>, com 80* produtos contendo alguma formulação do ativo, seguido pelo <strong>Glufosinato</strong>, com 51* produtos utilizando o ativo.</p>
+<p>Fipronil* segue sendo o primeiro ativo inseticida mais utilizado, mas é seguido por um agente inesperado: <em><strong>Cotesia flavipes</strong></em>.<br/>
 Este inseto é uma vespa parasitóide, amplamente utilizada no controle biológico da <em>broca-da-cana-de-açúcar</em>.</p>
-<p>Dentre os ingredientes ativos, apenas 1 é um fungicida: o <strong>clorotanonil</strong>, ativo multissítio de contato.</p>
+<p>Dentre os ingredientes ativos, apenas 1* é um fungicida: o <strong>clorotanonil</strong>, ativo multissítio de contato.</p>
 <hr/>
 </div>
 </div>
@@ -8444,49 +8457,7 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<p>Diante da enorme expressividade do <strong>Glifosato</strong>, uma análise curiosa revela que 4,35% dos produtos cadastrados são alguma espécie de Glifosato.</p>
-<p>Ou ainda...</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7e7814c7">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Retorna o valor numérico de produtos com glifosato</span>
-<span class="n">ingredientes_df</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">glifosato</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>INGREDIENTE_ATIVO
-False    4152
-True      189
-Name: count, dtype: int64</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6e61dbca">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>189 produtos de 4152.</p>
+<p>Diante da enorme expressividade do <strong>Glifosato</strong>, uma análise curiosa revela que 4,35%* dos produtos cadastrados são alguma espécie de Glifosato.</p>
 <hr/>
 </div>
 </div>
@@ -8507,11 +8478,11 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Gera uma variável "culturas_df", que é o agrupamento dos valores únicos dos ingredientes ativos por cultura</span>
-<span class="n">culturas_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'INGREDIENTE_ATIVO'</span><span class="p">)[</span><span class="s1">'CULTURA'</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+<span class="n">culturas_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'INGREDIENTE_ATIVO'</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="s1">'CULTURA'</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
 
 <span class="c1"># Retorna os 10 ingredientes ativos com mais ocorrência dentro das culturas</span>
 <span class="n">culturas_df</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -8525,7 +8496,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>INGREDIENTE_ATIVO
 Azoxistrobina (estrobilurina) (200 g/L) + difenoconazol (triazol) (125 g/L)          124
@@ -8551,10 +8522,10 @@ Name: CULTURA, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<p>Quando olhamos para os ingredientes ativos mais utilizados no espectro das culturas, vemos uma predominância dos fungicidas, ocupando os 3 primeiros lugares no ranking.
+<p>Quando olhamos para os ingredientes ativos mais utilizados no espectro das culturas, vemos uma predominância dos fungicidas*, ocupando os 3 primeiros lugares no ranking.
 Isso se deve ao amplo espectro de ação dos mesmos, sendo capaz de atuar nas mais diversas culturas cultivadas.</p>
-<p>A lambda-cialotrina (inseticida) e o glifosato - sal de isopropilamina (herbicida) compõem o restante dos top 5 ingredientes ativos mais versáteis.</p>
-<p>Há destaque para o top 9 e 10, onde ambos são óleos de origem vegetal (um fungicida/bactericida e outro inseticida).</p>
+<p>A lambda-cialotrina* (inseticida) e o glifosato - sal de isopropilamina* (herbicida) compõem o restante dos top 5 ingredientes ativos mais versáteis.</p>
+<p>Há destaque para o top 9 e 10*, onde ambos são óleos de origem vegetal (um fungicida/bactericida e outro inseticida).</p>
 <hr/>
 </div>
 </div>
@@ -8567,6 +8538,51 @@ Isso se deve ao amplo espectro de ação dos mesmos, sendo capaz de atuar nas ma
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Classe-de-uso">Classe de uso<a class="anchor-link" href="#Classe-de-uso">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1d5f23a3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Os <strong>agroquímicos</strong> são classificados de acordo com o tipo de praga ou organismo que atuam, sendo os principais tipos de ação:</p>
+<ul>
+<li><strong>Inseticidas</strong>: Combatem insetos e pragas que atacam as plantas, como pulgões, lagartas e percevejos.</li>
+<li><strong>Fungicidas</strong>: Controlam fungos causadores de doenças em culturas, como mofo, ferrugem e manchas foliares.</li>
+<li><strong>Herbicidas</strong>: Destinam-se ao controle de plantas daninhas, eliminando ou inibindo seu crescimento.</li>
+<li><strong>Acaricidas</strong>: Atuam contra ácaros, pequenos artrópodes que danificam folhas e frutos.</li>
+<li><strong>Nematicidas</strong>: Combatem nematoides (vermes parasitas do solo) que prejudicam as raízes das plantas.</li>
+<li><strong>Rodenticidas</strong>: Eliminam roedores como ratos e toupeiras que danificam lavouras.</li>
+<li><strong>Bactericidas</strong>: Inibem ou matam bactérias que causam infecções em plantas.</li>
+<li><strong>Reguladores de crescimento</strong>: Ajustam o desenvolvimento vegetal, como acelerar o amadurecimento ou controlar o crescimento de plantas.</li>
+</ul>
+<p>Essa classificação é baseada na <strong>natureza do organismo-alvo</strong>, sendo essencial para o uso correto e eficaz dos produtos na agricultura.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d68fba9c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Os <strong>produtos biológicos</strong> são produtos derivados de organismos vivos, utilizados no controle de pragas e doenças de forma mais sustentável. Diferentemente dos agroquímicos, atuam com maior seletividade e menor impacto ambiental.</p>
+<h3 id="Principais-tipos-de-a%C3%A7%C3%A3o-dos-produtos-biol%C3%B3gicos:">Principais tipos de ação dos produtos biológicos:<a class="anchor-link" href="#Principais-tipos-de-a%C3%A7%C3%A3o-dos-produtos-biol%C3%B3gicos:">¶</a></h3><ol>
+<li><p><strong>Inimigos naturais</strong><br/>
+Insetos predadores ou parasitoides (como <em>Trichogramma</em> spp.) que controlam populações de pragas, como lagartas e pulgões.</p>
+</li>
+<li><p><strong>Micro-organismos</strong><br/>
+Bactérias (ex: <em>Bacillus thuringiensis</em>), fungos (ex: <em>Beauveria bassiana</em>) e vírus que infectam e eliminam insetos-praga.</p>
+</li>
+<li><p><strong>Antagonistas microbianos</strong><br/>
+Micro-organismos que competem ou inibem patógenos do solo, como fungos causadores de murchas.</p>
+</li>
+</ol>
+<p>Esses produtos são essenciais na <strong>Agricultura Orgânica</strong> e no <strong>Manejo Integrado de Pragas (MIP)</strong>, promovendo equilíbrio ecológico e reduzindo a dependência de produtos sintéticos.</p>
 </div>
 </div>
 </div>
@@ -8586,7 +8602,7 @@ Isso se deve ao amplo espectro de ação dos mesmos, sendo capaz de atuar nas ma
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Seleciona colunas relevantes e remove duplicatas de produtos</span>
@@ -8604,7 +8620,7 @@ Isso se deve ao amplo espectro de ação dos mesmos, sendo capaz de atuar nas ma
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>CLASSE
 Herbicida                                             33.80
@@ -8627,7 +8643,7 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Cria uma coluna CLASSE onde as combinações de ativos são separadas</span>
@@ -8648,7 +8664,7 @@ Name: proportion, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>CLASSE
 Herbicida                       30.13
@@ -8674,10 +8690,10 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<p>Ao analisar as diferentes classes dos ingredientes ativos, percebemos a predominância dos herbicidas, sendo aproximadamente <strong>1 a cada 3</strong> produtos um herbicida.</p>
+<p>Ao analisar as diferentes classes dos ingredientes ativos, percebemos a predominância dos herbicidas, sendo aproximadamente <strong>1 a cada 3</strong> * produtos um herbicida.</p>
 <p>Quando separamos os produtos cujas classes abrangiam mais de um tipo de ação, vemos um <strong>aumento</strong> no número de inseticidas, significando que diversos produtos têm ação inseticida, mas também são classificados com outros tipos de ação.</p>
-<p>Outro ponto a se destacar é a participação de produtos biológicos/microbiológicos, com aproximadamente <strong>17,49%</strong> de participação na classificação das top 10 classes.
-Quando separados, a proporção sobe para <strong>18,49%</strong>.</p>
+<p>Outro ponto a se destacar é a participação de produtos biológicos/microbiológicos, com aproximadamente <strong>17,49%</strong> * de participação na classificação das top 10 classes.
+Quando separados, a proporção sobe para <strong>18,49%</strong> *.</p>
 <hr/>
 </div>
 </div>
@@ -8687,7 +8703,7 @@ Quando separados, a proporção sobe para <strong>18,49%</strong>.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Resetando a variável</span>
@@ -8705,7 +8721,7 @@ Quando separados, a proporção sobe para <strong>18,49%</strong>.</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.int64(792)</pre>
 </div>
@@ -8717,7 +8733,7 @@ Quando separados, a proporção sobe para <strong>18,49%</strong>.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="n">distribuicao_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">e_biologico</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">produtos_df</span><span class="p">[</span><span class="s1">'NR_REGISTRO'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
@@ -8731,7 +8747,7 @@ Quando separados, a proporção sobe para <strong>18,49%</strong>.</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.float64(18.63)</pre>
 </div>
@@ -8746,7 +8762,7 @@ Quando separados, a proporção sobe para <strong>18,49%</strong>.</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<p>Ao todo, existem <strong>792</strong> produtos cadastrados como (micro)biológicos, ou seja, <strong>18,63%</strong> dos produtos da base de dados são produtos (micro)biológicos.</p>
+<p>Ao todo, existem <strong>792*** produtos cadastrados como (micro)biológicos, ou seja, **18,63%</strong> * dos produtos da base de dados são produtos (micro)biológicos.</p>
 <hr/>
 </div>
 </div>
@@ -8756,7 +8772,7 @@ Quando separados, a proporção sobe para <strong>18,49%</strong>.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Seleciona colunas relevantes e remove duplicatas de produtos</span>
@@ -8766,7 +8782,7 @@ Quando separados, a proporção sobe para <strong>18,49%</strong>.</p>
 <span class="n">biologico_df</span><span class="p">[</span><span class="s1">'(MICRO)BIOLÓGICO'</span><span class="p">]</span> <span class="o">=</span> <span class="n">biologico_df</span><span class="p">[</span><span class="s1">'CLASSE'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">'biológico'</span><span class="p">,</span> <span class="n">case</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">na</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="c1"># Cria uma variável com o agrupamento por titular de registro da coluna de (micro)biológicos</span>
-<span class="n">biologico</span> <span class="o">=</span> <span class="n">biologico_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'TITULAR'</span><span class="p">)[</span><span class="s1">'(MICRO)BIOLÓGICO'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">biologico</span> <span class="o">=</span> <span class="n">biologico_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'TITULAR'</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="s1">'(MICRO)BIOLÓGICO'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 
 <span class="c1"># Mostra as 10 empresas com mais produtos (micro)biológicos cadastrados na base</span>
 <span class="n">biologico</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> 
@@ -8780,7 +8796,7 @@ Quando separados, a proporção sobe para <strong>18,49%</strong>.</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>TITULAR
 Koppert          48
@@ -8803,7 +8819,7 @@ Name: (MICRO)BIOLÓGICO, dtype: Int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">biologico</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -8817,7 +8833,7 @@ Name: (MICRO)BIOLÓGICO, dtype: Int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.int64(260)</pre>
 </div>
@@ -8829,7 +8845,7 @@ Name: (MICRO)BIOLÓGICO, dtype: Int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="n">biologico</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">distribuicao_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">e_biologico</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
@@ -8843,7 +8859,7 @@ Name: (MICRO)BIOLÓGICO, dtype: Int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.float64(32.83)</pre>
 </div>
@@ -8859,8 +8875,8 @@ Name: (MICRO)BIOLÓGICO, dtype: Int64</pre>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
 <p>Aqui vemos as 10 empresas com mais produtos (micro)biológicos cadastrados na base de dados.</p>
-<p>Tanto a Koppert quanto a Biotrop (Total) possuem mais de <strong>40</strong> produtos com essa característica, totalizando <strong>90</strong> produtos ao todo.</p>
-<p>Quando somados os 10 maiores players no mercado de produtos (micro)biológicos, temos <strong>260</strong> produtos ao todo, ou ainda, <strong>32,83%</strong>, quase 1 a cada 3.</p>
+<p>Tanto a Koppert quanto a Biotrop (Total) possuem mais de <strong>40</strong> produtos com essa característica, totalizando <strong>90</strong> * produtos ao todo.</p>
+<p>Quando somados os 10 maiores players no mercado de produtos (micro)biológicos, temos <strong>260</strong> produtos ao todo, ou ainda, <strong>32,83%</strong> *, quase 1 a cada 3.</p>
 <hr/>
 </div>
 </div>
@@ -8873,6 +8889,36 @@ Name: (MICRO)BIOLÓGICO, dtype: Int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Toxicologia-e-classe-ambiental">Toxicologia e classe ambiental<a class="anchor-link" href="#Toxicologia-e-classe-ambiental">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=738d9f36">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Os agroquímicos no Brasil são classificados principalmente com base em sua <strong>toxicidade para a saúde humana</strong> e em seu <strong>potencial de periculosidade ambiental</strong>, conforme estabelecido pela Anvisa e regulamentado pelo Sistema Globalmente Harmonizado (GHS).</p>
+<h3 id="Classifica%C3%A7%C3%A3o-Toxicol%C3%B3gica-(baseada-em-risco-%C3%A0-sa%C3%BAde-humana)">Classificação Toxicológica (baseada em risco à saúde humana)<a class="anchor-link" href="#Classifica%C3%A7%C3%A3o-Toxicol%C3%B3gica-(baseada-em-risco-%C3%A0-sa%C3%BAde-humana)">¶</a></h3><p>A classificação é indicada no rótulo por cores e categorias:</p>
+<ul>
+<li><strong>Categoria 1 – Produto Extremamente Tóxico</strong> (faixa <strong>vermelha</strong>): produtos com DL50 oral em ratos ≤ 5 mg/kg (formulações sólidas) ou ≤ 20 mg/kg (líquidas).</li>
+<li><strong>Categoria 2 – Produto Altamente Tóxico</strong> (faixa <strong>vermelha</strong>): DL50 oral entre 5–50 mg/kg (sólidas) ou 20–200 mg/kg (líquidas).</li>
+<li><strong>Categoria 3 – Produto Moderadamente Tóxico</strong> (faixa <strong>amarela</strong>): DL50 oral entre 50–500 mg/kg (sólidas) ou 200–2.000 mg/kg (líquidas).</li>
+<li><strong>Categoria 4 – Produto Pouco Tóxico</strong> (faixa <strong>azul</strong>): DL50 oral &gt; 500 mg/kg (sólidas) ou &gt; 2.000 mg/kg (líquidas).</li>
+<li><strong>Categoria 5 – Produto Improvável de Causar Dano Agudo</strong> (faixa <strong>azul</strong>): produtos que não causam efeitos tóxicos agudos em doses normais.</li>
+<li><strong>Não classificado</strong> (faixa <strong>verde</strong>): produtos cuja toxicidade não pôde ser definida ou que não foram avaliados.</li>
+</ul>
+<blockquote>
+<p><strong>Nota</strong>: A reclassificação realizada pela Anvisa em 2019, com base no GHS, alterou a classificação de 1.924 produtos, com 43 enquadrados na Categoria 1 e 899 na Categoria 5.</p>
+</blockquote>
+<h3 id="Classifica%C3%A7%C3%A3o-Ambiental-(Potencial-de-Periculosidade-Ambiental-%E2%80%93-PPA)">Classificação Ambiental (Potencial de Periculosidade Ambiental – PPA)<a class="anchor-link" href="#Classifica%C3%A7%C3%A3o-Ambiental-(Potencial-de-Periculosidade-Ambiental-%E2%80%93-PPA)">¶</a></h3><ul>
+<li><strong>Classe I – Altamente Perigoso</strong></li>
+<li><strong>Classe II – Muito Perigoso</strong></li>
+<li><strong>Classe III – Perigoso</strong></li>
+<li><strong>Classe IV – Pouco Perigoso</strong></li>
+</ul>
+<p>Essa classificação considera fatores como persistência no ambiente, bioacumulação e ecotoxicidade a organismos não-alvo.</p>
 </div>
 </div>
 </div>
@@ -8892,7 +8938,7 @@ Name: (MICRO)BIOLÓGICO, dtype: Int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Dicionário com o fim de padronizar as classificações toxicológicas dos produtos</span>
@@ -8934,7 +8980,7 @@ Name: (MICRO)BIOLÓGICO, dtype: Int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>CLASSE_TOXICOLOGICA_PADRAO
 Categoria 5 / Improvável de Causar Dano    52.59
@@ -8958,8 +9004,227 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<p>Podemos notar algo bastante positivo com essa tabela: cerca de <strong>89,28%</strong> estão classificados ou como <em>improváveis de causar dano</em>, ou como <em>pouco tóxicos</em> ou como <em>não classificado</em> (geralmente atribuído a produtos <em><strong>(micro)biológicos</strong></em>).</p>
-<p>Apenas <strong>4,4%</strong> são classificados ou como <em>extremamente tóxicos</em> ou como <em>altamente tóxico</em>, significando uma baixa proporção frente ao universo do banco de dados.</p>
+<p>Podemos notar algo bastante positivo com essa tabela: cerca de <strong>78%</strong> * estão classificados ou como <em>improváveis de causar dano</em> ou como <em>pouco tóxicos</em>.</p>
+<p>Apenas **4,4%*** são classificados ou como <em>extremamente tóxicos</em> ou como <em>altamente tóxico</em>, significando uma baixa proporção frente ao universo do banco de dados.</p>
+<hr/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8d230f0d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Qual-a-distribui%C3%A7%C3%A3o-toxicol%C3%B3gica-das-classes-de-produtos?">Qual a distribuição toxicológica das classes de produtos?<a class="anchor-link" href="#Qual-a-distribui%C3%A7%C3%A3o-toxicol%C3%B3gica-das-classes-de-produtos?">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=351f7826">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Seleciona colunas relevantes e remove duplicatas de produtos</span>
+<span class="n">classes_toxicologia_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">'NR_REGISTRO'</span><span class="p">,</span> <span class="s1">'CLASSE'</span><span class="p">,</span> <span class="s1">'CLASSE_TOXICOLOGICA_PADRAO'</span><span class="p">]]</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'NR_REGISTRO'</span><span class="p">])</span>
+
+<span class="c1"># Cria colunas booleanas para as 5 classes toxicológicas</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+    <span class="n">classes_toxicologia_df</span><span class="p">[</span><span class="sa">f</span><span class="s1">'CATEGORIA_</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1">'</span><span class="p">]</span> <span class="o">=</span> <span class="n">classes_toxicologia_df</span><span class="p">[</span><span class="s1">'CLASSE_TOXICOLOGICA_PADRAO'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Categoria </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1">'</span><span class="p">,</span> <span class="n">case</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">na</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Cria coluna booleana para a classe de "Não Classificado"</span>
+<span class="n">classes_toxicologia_df</span><span class="p">[</span><span class="s1">'NAO_CLASSIFICADO'</span><span class="p">]</span> <span class="o">=</span> <span class="n">classes_toxicologia_df</span><span class="p">[</span><span class="s1">'CLASSE_TOXICOLOGICA_PADRAO'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">'Não Classificado'</span><span class="p">,</span> <span class="n">case</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">na</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Separa as classes em cada linha para melhor compreensão</span>
+<span class="n">classes_toxicologia_df</span><span class="p">[</span><span class="s1">'CLASSE'</span><span class="p">]</span> <span class="o">=</span> <span class="n">classes_toxicologia_df</span><span class="p">[</span><span class="s1">'CLASSE'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
+<span class="n">classes_toxicologia</span> <span class="o">=</span> <span class="n">classes_toxicologia_df</span><span class="o">.</span><span class="n">explode</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">'CLASSE'</span><span class="p">)</span>
+
+<span class="c1"># Agrupa por classe e soma a quantidade de produtos por classe</span>
+<span class="n">classes_toxicologia</span> <span class="o">=</span> <span class="n">classes_toxicologia</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'CLASSE'</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="kc">True</span><span class="p">)[[</span><span class="s1">'CATEGORIA_1'</span><span class="p">,</span> <span class="s1">'CATEGORIA_2'</span><span class="p">,</span> <span class="s1">'CATEGORIA_3'</span><span class="p">,</span> <span class="s1">'CATEGORIA_4'</span><span class="p">,</span> <span class="s1">'CATEGORIA_5'</span><span class="p">,</span><span class="s1">'NAO_CLASSIFICADO'</span><span class="p">]]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1"># Adiciona coluna de total para facilitar ordenação</span>
+<span class="n">classes_toxicologia</span><span class="p">[</span><span class="s1">'TOTAL'</span><span class="p">]</span> <span class="o">=</span> <span class="n">classes_toxicologia</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Ordena pelas classes com mais produtos e exibe as top 10</span>
+<span class="n">classes_toxicologia</span> <span class="o">=</span> <span class="n">classes_toxicologia</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s1">'TOTAL'</span><span class="p">)</span>
+
+<span class="n">classes_toxicologia</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>CATEGORIA_1</th>
+<th>CATEGORIA_2</th>
+<th>CATEGORIA_3</th>
+<th>CATEGORIA_4</th>
+<th>CATEGORIA_5</th>
+<th>NAO_CLASSIFICADO</th>
+<th>TOTAL</th>
+</tr>
+<tr>
+<th>CLASSE</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Herbicida</th>
+<td>6</td>
+<td>20</td>
+<td>27</td>
+<td>422</td>
+<td>908</td>
+<td>65</td>
+<td>1448</td>
+</tr>
+<tr>
+<th>Inseticida</th>
+<td>25</td>
+<td>83</td>
+<td>152</td>
+<td>339</td>
+<td>265</td>
+<td>59</td>
+<td>923</td>
+</tr>
+<tr>
+<th>Fungicida</th>
+<td>5</td>
+<td>37</td>
+<td>44</td>
+<td>268</td>
+<td>485</td>
+<td>45</td>
+<td>884</td>
+</tr>
+<tr>
+<th>Inseticida Microbiológico</th>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>26</td>
+<td>297</td>
+<td>82</td>
+<td>406</td>
+</tr>
+<tr>
+<th>Acaricida</th>
+<td>1</td>
+<td>22</td>
+<td>31</td>
+<td>103</td>
+<td>123</td>
+<td>10</td>
+<td>290</td>
+</tr>
+<tr>
+<th>Fungicida microbiológico</th>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>138</td>
+<td>41</td>
+<td>181</td>
+</tr>
+<tr>
+<th>Nematicida Microbiológico</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>84</td>
+<td>47</td>
+<td>131</td>
+</tr>
+<tr>
+<th>Regulador de Crescimento</th>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>22</td>
+<td>62</td>
+<td>31</td>
+<td>118</td>
+</tr>
+<tr>
+<th>Acaricida Microbiológico</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>69</td>
+<td>6</td>
+<td>77</td>
+</tr>
+<tr>
+<th>Agente Biológico de Controle</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>54</td>
+<td>55</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f96c9467">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<p>Herbicidas são os mais numerosos, mas também os menos tóxicos, onde a maioria deles registrados hoje são de <strong>baixa toxicidade</strong> (Categorias 4 e 5). Ou seja, apesar de representarem 1/3 dos produtos, herbicidas têm perfil toxicológico predominantemente baixo.</p>
+<p>Inseticidas têm a <strong>maior proporção de produtos nas categorias mais tóxicas</strong> (1, 2 e 3) entre as classes principais, onde quase 30% dos inseticidas registrados são classificados como moderadamente a extremamente tóxicos. Isso se deve ao fato dos mecanismos de ação dos produtos atuarem por vias que são análogas nos seres humanos.</p>
+<p>Produtos microbiológicos são <strong>extremamente seguros</strong> com praticamente <strong>zero</strong> nas categorias tóxicas. Por exemplo, 100% dos nematicidas microbiológicos são classificados como baixa toxicidade ou não classificados.</p>
+<p>Produtos biológicos frequentemente <strong>não se enquadram</strong> nas categorias toxicológicas tradicionais, o que faz sentido, já que são organismos vivos, não moléculas químicas.</p>
+<p>Biológicos são <strong>proporcionalmente muito mais seguros</strong> que químicos. Menos de 1%* dos produtos microbiológicos estão nas categorias de maior toxicidade, contra ~10-15%* dos químicos.</p>
+<p>Fungicidas são majoritariamente de baixa toxicidade, mas não tanto quanto herbicidas.</p>
+<p>Reguladores de crescimento são predominantemente seguros ou não classificados.</p>
 <hr/>
 </div>
 </div>
