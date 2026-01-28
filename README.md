@@ -3,7 +3,7 @@
 > Análise de dados dos produtos formulados registrados no sistema Agrofit do Ministério da Agricultura (MAPA), com foco em ingredientes ativos, classes de uso, perfil toxicológico e presença de produtos biológicos no mercado brasileiro.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
-![Pandas](https://img.shields.io/badge/Pandas-1.5+-green)
+![Pandas](https://img.shields.io/badge/Pandas-2.2+-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
