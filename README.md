@@ -118,7 +118,7 @@ jupyter notebook notebooks/agrofit.ipynb
 
 ## 🚀 Próximos passos
 
-- [ ] Continuação das análises sobre toxicologia
+- [X] Continuação das análises sobre toxicologia
 - [X] Análise dos produtos biológicos
 - [X] Insights sobre as culturas atendidas e formulações
 - [ ] Dashboard interativo com Plotly/Dash ou Streamlit
