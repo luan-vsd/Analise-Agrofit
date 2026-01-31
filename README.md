@@ -20,6 +20,12 @@ Este projeto realiza uma **análise exploratória de dados (EDA)** da base públ
 
 ---
 
+## 📖 Onde encontrar a análise
+
+Basta fazer o download do arquivo PDF mais recente clicando no link a seguir: [Análise Agrofit](https://github.com/luan-vsd/Analise-Agrofit/releases/latest)
+
+---
+
 ## 🗂️ Estrutura do repositório
 
 ```
