@@ -31,13 +31,13 @@ Basta fazer o download do arquivo PDF mais recente clicando no link a seguir: [A
 ```
 📁 agrofit-analise/
 │
-├── 📁 data/               # Dados brutos e processados
+├── 📁 data/               # Pasta onde será a base para os dados brutos
 │   └── agrofitprodutosformulados.csv
 │
 ├── 📁 notebooks/          # Jupyter Notebooks com análises
 │   └── agrofit.ipynb
 │
-├── 📁 outputs/            # Gráficos, tabelas e relatórios que serão gerados
+├── 📁 outputs/            # Gráficos que serão gerados
 │
 ├── README.md              # Este arquivo
 └── requirements.txt       # Dependências do projeto
@@ -101,6 +101,11 @@ jupyter notebook notebooks/agrofit.ipynb
 - **~92% dos herbicidas** caem na classificação de **Categoria 4 e 5**.
 - Inseticidas têm o perfil mais perigoso de todos, com **~28%** nas **Categorias de 1 a 3**.
 
+### ⚗️ Formulações de uso
+
+- **Suspensão Concentrada (SC)** é a formulação que mais está presente entre os produtos, com **~28%** do mercado.
+- **Insetos vivos** também aparecem no top 10 com **~1,5%** de representatividade.
+
 ---
 
 ## 🧹 Desafios enfrentados e soluções adotadas
@@ -127,6 +132,7 @@ jupyter notebook notebooks/agrofit.ipynb
 - [X] Continuação das análises sobre toxicologia
 - [X] Análise dos produtos biológicos
 - [X] Insights sobre as culturas atendidas e formulações
+- [ ] Geração de gráficos
 - [ ] Dashboard interativo com Plotly/Dash ou Streamlit
 
 ---
