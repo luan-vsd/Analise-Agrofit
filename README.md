@@ -8,6 +8,8 @@
 
 ---
 
+![capa](/capa_github.png)
+
 ## 📊 Sobre o projeto
 
 Este projeto realiza uma **análise exploratória de dados (EDA)** da base pública de **produtos formulados do Agrofit**, disponibilizada pelo MAPA. O objetivo é extrair insights sobre:
